@@ -1,0 +1,32 @@
+@import '@styles/variables.less';
+
+.main-layout{
+    display: flex;
+    height: 100vh;
+    &-side{
+        display: flex;
+        flex-direction: column;
+        width: 60px;
+        text-align: center;
+        border-right: 1px @border solid;
+        :global{
+            .logo{
+                margin: 12px auto;
+            }
+            .navs{
+                flex:1;
+            }
+        }
+    }
+    &-main{
+        display: flex;
+        flex:1;
+        flex-direction: column;
+        &-container{
+            flex:1;
+            padding: 30px;
+            overflow: auto;
+            background: @bg-main;
+        }
+    }
+}

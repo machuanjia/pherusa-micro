@@ -1,0 +1,47 @@
+.login-wrap {
+  display: flex;
+  height: 100%;
+  .login-aside {
+    flex-shrink: 0;
+    width: 40%;
+    max-width: 620px;
+    padding-top: 120px;
+    text-align: center;
+    background: url('https://cdn.wul.ai/official/hestia/login-aside-bg.png') no-repeat bottom left @color-primary;
+    background-size: contain;
+    .login-icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .login-aside-content {
+      width: 70%;
+    }
+  }
+  .login-main {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.login-form-wrap {
+  width: 420px;
+  .login-form-header {
+    text-align: center;
+    .login-form-title {
+      color: @color-primary;
+      font-weight: 500;
+      font-size: 2rem;
+    }
+    .login-form-desc {
+      margin-bottom: 48px;
+      color: @text-desc;
+      font-size: 0.875rem;
+    }
+  }
+  .login-form-footer {
+    text-align: center;
+  }
+}

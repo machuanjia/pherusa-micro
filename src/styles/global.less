@@ -1,0 +1,106 @@
+@import './variables.less';
+
+#root {
+  height: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.action-btn {
+  min-width: auto !important;
+}
+
+.opacity-5 {
+  opacity: 0.5;
+}
+
+.hide {
+  display: none;
+}
+
+.c-tp {
+  &-container {
+    height: 100%;
+    padding: 24px;
+  }
+
+  &-title {
+    margin-right: auto;
+    color: @color-black;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &-total {
+    color: @color-label-gray;
+    font-weight: normal;
+
+    &::before {
+      margin: 0 8px;
+      color: @border-gray;
+      content: '|';
+    }
+  }
+
+  &-table {
+    position: relative;
+    height: calc(100% - 60px);
+    margin-top: 24px;
+    overflow: hidden;
+    background-color: @color-white;
+    border-radius: 4px;
+    box-shadow: @table-shadow;
+  }
+
+  &-search:global(.ant-input-affix-wrapper) {
+    width: 200px;
+    margin-right: 16px;
+  }
+
+  &-name-tr {
+    padding: 8px 24px !important;
+  }
+
+  &-name {
+    justify-content: space-between;
+  }
+
+  &-name:hover &-edit {
+    visibility: visible;
+  }
+
+  &-edit {
+    margin-left: 8px;
+    color: @shadow-gray;
+    visibility: hidden;
+    cursor: pointer;
+
+    &:hover {
+      color: @color-primary;
+    }
+  }
+}
+
+.c-label {
+  margin: 24px 0 8px 0;
+  color: @color-label-gray;
+  font-weight: 500;
+
+  &.t-first {
+    margin-top: 0;
+  }
+
+  &.is-required::before {
+    display: inline-block;
+    width: 2px;
+    height: 10px;
+    margin: 4px 4px 0 0;
+    overflow: hidden;
+    vertical-align: baseline;
+    background-color: @color-danger;
+    border-radius: 3px;
+    content: '';
+  }
+}

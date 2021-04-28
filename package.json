@@ -1,0 +1,48 @@
+{
+  "name": "nereus",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "craco start",
+    "mock": "cd ./mock && npm run start:dev",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject",
+    "analyze": "source-map-explorer dist/static/js/main.*",
+    "lint": "eslint src --fix --ext .ts,.tsx ",
+    "style": "stylelint --fix \"src/**/*.less\" --syntax less"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/charts": "1.0.13",
+    "@antv/layout": "0.0.16",
+    "laiye-antd": "^1.0.0-beta.1",
+    "laiye-pro": "1.0.37",
+    "pherusa-lib": "1.0.20",
+    "qiankun": "2.4.1"
+  },
+  "devDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run style",
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
+    }
+  }
+}
