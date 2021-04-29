@@ -1,18 +1,23 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-21 17:38:42
- * @LastEditTime: 2021-04-22 15:11:58
+ * @LastEditTime: 2021-04-29 14:07:42
  * @LastEditors: D.Y
- * @FilePath: /pherusa/src/utils/request.ts
+ * @FilePath: /pherusa-micro/src/utils/request.ts
  * @Description:
  */
 
 import { message } from 'laiye-antd'
 import { logout } from '@utils/index'
 import { getRequest } from 'laiye-pro'
+import { getToken } from './catch'
 
 export default getRequest({
   baseURL: APP_CONFIGRATION.api,
+  // @ts-ignore
+  requestAction: (config: any) => {
+    config.headers.authorization = `Bearer ${getToken()}`
+  },
   responseAction: (res) => {
     // eslint-disable-next-line no-debugger
     const { code, data } = res

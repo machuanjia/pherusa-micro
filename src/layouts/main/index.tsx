@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-02-04 15:27:20
- * @LastEditTime: 2021-04-28 13:31:54
+ * @LastEditTime: 2021-04-29 14:04:43
  * @LastEditors: D.Y
  * @FilePath: /pherusa-micro/src/layouts/main/index.tsx
  * @Description:
@@ -39,7 +39,9 @@ export default class MainLayout extends Component<IMainLayoutProps, IMainLayoutS
         this.setState({
           loading: false,
         })
-        // this.props.history.push('/dashboard')
+        this.props.history.push('/dashboard')
+      }else{
+        this.props.history.push('/login')
       }
     })
   }

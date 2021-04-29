@@ -1,9 +1,9 @@
 /*
  * @Author: D.Y
  * @Date: 2021-02-04 15:27:20
- * @LastEditTime: 2021-02-04 15:51:41
+ * @LastEditTime: 2021-04-29 14:03:35
  * @LastEditors: D.Y
- * @FilePath: /pherusa/src/apis/users.ts
+ * @FilePath: /pherusa-micro/src/apis/users.ts
  * @Description: 
  */
 
@@ -20,7 +20,7 @@ export const signIn = (data: { phone: string; captcha: string }) => {
 
 export const getUserInfo = (params = {}) => {
   return request({
-    url: '/auth/user',
+    url: '/auth/info',
     method: 'get',
     params,
   })

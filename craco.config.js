@@ -157,7 +157,7 @@ module.exports = {
         changeOrigin: true,
         secure: false,
       },
-      '/api': {
+      '/api/micro': {
         target: `http://localhost:40000`,
         changeOrigin: true,
       },

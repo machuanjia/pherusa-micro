@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-21 17:38:42
- * @LastEditTime: 2021-04-28 14:03:33
+ * @LastEditTime: 2021-04-29 14:05:12
  * @LastEditors: D.Y
  * @FilePath: /pherusa-micro/src/permission.ts
  * @Description:
@@ -39,11 +39,11 @@ export const setInfo = async () => {
     ({ data }) => {
       const { roles = [], permissions = [] } = data
       globalActions.setGlobalState({
-        token:data.majorKeyId
+        token:data.token
       })
       store.dispatch({
         type: SET_USET_ID,
-        id: data.majorKeyId,
+        id: data._id,
       })
       store.dispatch({
         type: SET_ROLES,

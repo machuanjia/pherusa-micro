@@ -1,9 +1,9 @@
 /*
  * @Author: D.Y
  * @Date: 2021-02-04 15:27:20
- * @LastEditTime: 2021-04-22 14:47:17
+ * @LastEditTime: 2021-04-29 14:08:46
  * @LastEditors: D.Y
- * @FilePath: /pherusa/src/views/login/index.tsx
+ * @FilePath: /pherusa-micro/src/views/login/index.tsx
  * @Description:
  */
 import React, { Component } from 'react'
@@ -29,7 +29,7 @@ type ILoginState = unknown
 class LoginView extends Component<ILoginProps, ILoginState> {
   async loginSuccess(payload: ILoginEntity) {
     const { data } = await signIn(payload)
-    setToken('token')
+    setToken(data.token)
     data && this.props.history.push('/')
   }
 
@@ -50,13 +50,6 @@ class LoginView extends Component<ILoginProps, ILoginState> {
       <div className={styles['login-wrap']}>
         <div className={styles['login-aside']}>
           <div className={styles['login-icon']}>
-            <a className="form-go-banner" href="/">
-              <img
-                className="nav-logo"
-                alt="logo"
-                src="https://cdn.wul.ai/official/img/officialLogo.png"
-              />
-            </a>
           </div>
           <img
             className={styles['login-aside-content']}
@@ -76,27 +69,11 @@ class LoginView extends Component<ILoginProps, ILoginState> {
             </div>
             <div className={styles['login-form-body']}>
               <Form onFinish={this.handleSubmit.bind(this)} className={styles['page-form']}>
-                <Form.Item name="phone" rules={[{ validator: this.checkPhone.bind(this) }]}>
+                <Form.Item name="username" rules={[{ required:true }]}>
                   <Input className="xlarge" placeholder={i18n.t('login.desc')} />
                 </Form.Item>
-                <Form.Item
-                  name="captcha"
-                  rules={[{ required: true, message: i18n.t('validate.captcha.message') }]}
-                >
-                  <div className="flex-r">
-                    <div className="flex-1">
-                      <Input
-                        className="xlarge"
-                        type="captcha"
-                        placeholder={i18n.t('validate.captcha.placeholder')}
-                      />
-                    </div>
-                    <div className="m-l-12">
-                      <Button type="primary" className="xlarge">
-                        <Trans i18nKey="login.captcha"></Trans>
-                      </Button>
-                    </div>
-                  </div>
+                <Form.Item name="password" rules={[{ required:true }]}>
+                  <Input className="xlarge" placeholder={i18n.t('login.desc')} />
                 </Form.Item>
                 <Form.Item>
                   <Button type="primary" htmlType="submit" className="xlarge" block>

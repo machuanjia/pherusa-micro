@@ -3508,6 +3508,13 @@ babel-plugin-transform-react-remove-prop-types@0.4.24:
   resolved "http://npm.laiye.com/babel-plugin-transform-react-remove-prop-types/-/babel-plugin-transform-react-remove-prop-types-0.4.24.tgz#f2edaf9b4c6a5fbe5c1d678bfb531078c1555f3a"
   integrity sha1-8u2vm0xqX75cHWeL+1MQeMFVXzo=
 
+babel-plugin-transform-runtime@^6.23.0:
+  version "6.23.0"
+  resolved "http://npm.laiye.com/babel-plugin-transform-runtime/-/babel-plugin-transform-runtime-6.23.0.tgz#88490d446502ea9b8e7efb0fe09ec4d99479b1ee"
+  integrity sha1-iEkNRGUC6puOfvsP4J7E2ZR5se4=
+  dependencies:
+    babel-runtime "^6.22.0"
+
 babel-preset-current-node-syntax@^1.0.0:
   version "1.0.1"
   resolved "http://npm.laiye.com/babel-preset-current-node-syntax/-/babel-preset-current-node-syntax-1.0.1.tgz#b4399239b89b2a011f9ddbe3e4f401fc40cff73b"
@@ -3555,7 +3562,7 @@ babel-preset-react-app@^10.0.0:
     babel-plugin-macros "2.8.0"
     babel-plugin-transform-react-remove-prop-types "0.4.24"
 
-babel-runtime@6.x, babel-runtime@^6.23.0, babel-runtime@^6.26.0:
+babel-runtime@6.x, babel-runtime@^6.22.0, babel-runtime@^6.23.0, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "http://npm.laiye.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   integrity sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
@@ -8585,10 +8592,10 @@ laiye-antd@^1.0.0-beta.1:
   dependencies:
     antd "4.2.4"
 
-laiye-pro@1.0.37:
-  version "1.0.37"
-  resolved "http://npm.laiye.com/laiye-pro/-/laiye-pro-1.0.37.tgz#2206484b965fcda0bd988cfacd3b0c4589e9b681"
-  integrity sha512-L/TUcTCPtJrKTOmP9rOyIQZ15jC3fi1Ob35/zJko/rJ3skar8B7e1nepxfUAUM1srtiWoPmhkPLnThjoiX8Flw==
+laiye-pro@1.0.39:
+  version "1.0.39"
+  resolved "http://npm.laiye.com/laiye-pro/-/laiye-pro-1.0.39.tgz#5c22700230af5b4bfb996f6c7461c4ec86707e9c"
+  integrity sha512-EzyRCARdS8VnIE06Hxx9NdY6J37YZZNwacLiVYGMknG5jkuUFTBU3kbrJA+puECttx920AdZoGcTeqaY0PopTA==
   dependencies:
     "@ant-design/icons" "4.6.2"
     "@testing-library/jest-dom" "^5.11.4"
@@ -10211,10 +10218,10 @@ performance-now@^2.1.0:
   resolved "http://npm.laiye.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
-pherusa-lib@1.0.20:
-  version "1.0.20"
-  resolved "http://npm.laiye.com/pherusa-lib/-/pherusa-lib-1.0.20.tgz#d6216130e9dd6c52e40718ec97fa09f40a5e3070"
-  integrity sha512-AW8VYe0vIJfikIKeN6QQgDbBwXLSgmTJH2w+MAJQGr+ZeWc1F5nWrGiNzdpzuZnnNbKq2ozFxLh5yThI1Rlr+Q==
+pherusa-lib@1.0.21:
+  version "1.0.21"
+  resolved "http://npm.laiye.com/pherusa-lib/-/pherusa-lib-1.0.21.tgz#aa248b5ce4a73542e3eb4606a01156802d4eeea6"
+  integrity sha512-o+tfqvllgO6seZyaUtgNhJbD0RJxzQYnXqsZ2hG7+HVD1p7uska85b/1vjPS9trExdifZAPAp+PSnrQA6yi/Sw==
   dependencies:
     "@babel/plugin-proposal-decorators" "^7.12.1"
     "@babel/runtime" "^7.12.5"
@@ -10230,6 +10237,7 @@ pherusa-lib@1.0.20:
     "@typescript-eslint/eslint-plugin" "^4.6.0"
     "@typescript-eslint/parser" "^4.6.0"
     babel-plugin-import "^1.13.1"
+    babel-plugin-transform-runtime "^6.23.0"
     craco-less "^1.17.0"
     eslint "^7.13.0"
     express "^4.17.1"
