@@ -158,7 +158,7 @@ module.exports = {
         secure: false,
       },
       '/api': {
-        target: `http://localhost:30000`,
+        target: `http://localhost:40000`,
         changeOrigin: true,
       },
     },
