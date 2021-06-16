@@ -7,9 +7,9 @@
  * @Description: 
  */
 import React, { Component } from 'react';
-import { Form, Input, Button } from 'laiye-antd';
+import { Form, Input, Button } from 'antd';
 import i18n from 'i18next';
-import { isPhoneNumber } from 'laiye-pro';
+import { isPhoneNumber } from 'pherusa-pro';
 
 type ITableCollectionProps = {
   callback: ({ isVisible, isRefresh }) => unknown;

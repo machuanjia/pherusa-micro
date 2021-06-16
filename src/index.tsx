@@ -10,7 +10,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Helmet } from 'react-helmet'
-import { ConfigProvider } from 'laiye-antd'
+import { ConfigProvider } from 'antd'
 import 'react-grid-layout/css/styles.css'
 import 'react-resizable/css/styles.css'
 import { Provider } from 'react-redux'

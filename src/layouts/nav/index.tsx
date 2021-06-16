@@ -7,10 +7,10 @@
  * @Description:
  */
 import React, { Component } from 'react'
-import { Menu } from 'laiye-antd'
+import { Menu } from 'antd'
 import { Link } from 'react-router-dom'
 import { find } from 'lodash'
-import { Icon } from 'laiye-pro'
+import { Icon } from 'pherusa-pro'
 import store from '@stores/store'
 import { ROUTE_APP_KEY } from '@routes/index'
 

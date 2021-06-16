@@ -1,8 +1,8 @@
-import { Avatar, Drawer, Menu, Modal, Popover, Radio } from 'laiye-antd';
+import { Avatar, Drawer, Menu, Modal, Popover, Radio } from 'antd';
 import React, { Component } from 'react';
 import i18n from 'i18next';
 import { SketchPicker } from 'react-color';
-import { DRAWER_SIZE, MODAL_SIZE } from 'laiye-pro';
+import { DRAWER_SIZE, MODAL_SIZE } from 'pherusa-pro';
 import { logout } from '@utils/index';
 import {
   QuestionCircleOutlined,

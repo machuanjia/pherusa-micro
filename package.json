@@ -33,9 +33,8 @@
   "dependencies": {
     "@ant-design/charts": "1.0.13",
     "@antv/layout": "0.0.16",
-    "laiye-antd": "^1.0.0-beta.1",
-    "laiye-pro": "1.0.39",
-    "pherusa-lib": "1.0.21",
+    "pherusa-lib": "2.0.4",
+    "pherusa-pro": "2.0.4",
     "qiankun": "2.4.1"
   },
   "devDependencies": {},

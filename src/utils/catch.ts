@@ -6,7 +6,7 @@
  * @FilePath: /pherusa/src/utils/catch.ts
  * @Description: 
  */
-import { getItem, setItem, removeItem } from 'laiye-pro'
+import { getItem, setItem, removeItem } from 'pherusa-pro'
 
 const tokenKey = 'authorization'
 export const getToken = () => getItem(tokenKey)

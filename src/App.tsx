@@ -9,7 +9,7 @@
 
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
-import { RouteViewer } from 'laiye-pro'
+import { RouteViewer } from 'pherusa-pro'
 import store from '@stores/store'
 
 class App extends Component {

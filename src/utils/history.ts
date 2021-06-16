@@ -7,7 +7,7 @@
  * @Description:
  */
 
-import { browserHistory } from 'laiye-pro'
+import { browserHistory } from 'pherusa-pro'
 import { removeToken } from './catch'
 
 export const history = browserHistory

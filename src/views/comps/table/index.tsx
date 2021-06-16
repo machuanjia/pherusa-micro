@@ -1,10 +1,10 @@
 import React, { Component, Fragment } from 'react';
-import { Table, Input, Button, Tooltip, Modal } from 'laiye-antd';
+import { Table, Input, Button, Tooltip, Modal } from 'antd';
 
-import { ContentLayoutComponent } from 'laiye-pro';
-import { MODAL_SIZE } from 'laiye-pro';
+import { ContentLayoutComponent } from 'pherusa-pro';
+import { MODAL_SIZE } from 'pherusa-pro';
 import TableCollecrtionComponent from './TableCollection';
-import { listMixin } from 'laiye-pro';
+import { listMixin } from 'pherusa-pro';
 import { getUsers, getUserDetail, updateUser, deleteUser } from '@apis/index';
 import type { IListMixin } from '@interfaces/mixin';
 import {

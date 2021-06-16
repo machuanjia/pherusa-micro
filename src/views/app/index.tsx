@@ -7,7 +7,7 @@
  * @Description:
  */
 import React, { Component } from 'react'
-import { PartLoading } from 'laiye-pro'
+import { PartLoading } from 'pherusa-pro'
 
 type State = unknown
 

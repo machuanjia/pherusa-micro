@@ -8585,16 +8585,16 @@ known-css-properties@^0.21.0:
   resolved "http://npm.laiye.com/known-css-properties/-/known-css-properties-0.21.0.tgz#15fbd0bbb83447f3ce09d8af247ed47c68ede80d"
   integrity sha1-FfvQu7g0R/POCdivJH7UfGjt6A0=
 
-laiye-antd@^1.0.0-beta.1:
+antd@^1.0.0-beta.1:
   version "1.0.0"
-  resolved "http://npm.laiye.com/laiye-antd/-/laiye-antd-1.0.0.tgz#ab48ceb9b92dcf6b592dc94d5b19ef4577e8507b"
+  resolved "http://npm.laiye.com/antd/-/antd-1.0.0.tgz#ab48ceb9b92dcf6b592dc94d5b19ef4577e8507b"
   integrity sha512-ExM6XAwGxashXiS1XQxWd315DzioLK3BsMVrOB52mpUSVauY7wd9wDr0dcHAeXX/7IR1nZsoWrWoW+FBAwzh4w==
   dependencies:
     antd "4.2.4"
 
-laiye-pro@1.0.39:
+pherusa-pro@1.0.39:
   version "1.0.39"
-  resolved "http://npm.laiye.com/laiye-pro/-/laiye-pro-1.0.39.tgz#5c22700230af5b4bfb996f6c7461c4ec86707e9c"
+  resolved "http://npm.laiye.com/pherusa-pro/-/pherusa-pro-1.0.39.tgz#5c22700230af5b4bfb996f6c7461c4ec86707e9c"
   integrity sha512-EzyRCARdS8VnIE06Hxx9NdY6J37YZZNwacLiVYGMknG5jkuUFTBU3kbrJA+puECttx920AdZoGcTeqaY0PopTA==
   dependencies:
     "@ant-design/icons" "4.6.2"

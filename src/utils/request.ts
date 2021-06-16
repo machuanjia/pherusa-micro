@@ -7,9 +7,9 @@
  * @Description:
  */
 
-import { message } from 'laiye-antd'
+import { message } from 'antd'
 import { logout } from '@utils/index'
-import { getRequest } from 'laiye-pro'
+import { getRequest } from 'pherusa-pro'
 import { getToken } from './catch'
 
 export default getRequest({

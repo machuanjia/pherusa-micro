@@ -7,7 +7,7 @@
  * @Description: 
  */
 import React, { Component } from 'react';
-import { RouteViewer } from 'laiye-pro';
+import { RouteViewer } from 'pherusa-pro';
 
 type IRouterProps = {
   route: any;

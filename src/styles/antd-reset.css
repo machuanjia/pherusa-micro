@@ -1,19 +1,19 @@
 .xlarge {
   height: 48px !important;
 }
-.ant-menu-inline-collapsed {
+.ant-menu.ant-menu-inline-collapsed {
   width: 60px;
 }
 .nav-wrap.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
   padding: 0 22px !important;
 }
-.nav-wrap.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title span {
+.nav-wrap.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .nav-text {
   display: none;
 }
 .nav-wrap.ant-menu-inline-collapsed > .ant-menu-item {
   padding: 0 22px !important;
 }
-.nav-wrap.ant-menu-inline-collapsed > .ant-menu-item span {
+.nav-wrap.ant-menu-inline-collapsed > .ant-menu-item .nav-text {
   display: none;
 }
 .ant-table-pagination.ant-pagination {

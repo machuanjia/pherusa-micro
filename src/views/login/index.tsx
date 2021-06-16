@@ -7,13 +7,13 @@
  * @Description:
  */
 import React, { Component } from 'react'
-import { Form, Input, Button } from 'laiye-antd'
+import { Form, Input, Button } from 'antd'
 import type { ILoginEntity } from '@interfaces/index'
 import i18n from 'i18next'
 import { connect } from 'react-redux'
 import { Trans } from 'react-i18next'
 
-import { isPhoneNumber } from 'laiye-pro'
+import { isPhoneNumber } from 'pherusa-pro'
 import { signIn } from '@apis/users'
 import { addToken } from '@stores/app/app.actions'
 import { setToken } from '@utils/index'

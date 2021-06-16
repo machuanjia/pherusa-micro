@@ -19,7 +19,7 @@ import {
   SET_USET_ID,
   SET_FLATTEN_ROUTERS,
 } from '@stores/app/app.types'
-import { setPermissions, filterAsyncRoutes, filterFlattenRoutes } from 'laiye-pro'
+import { setPermissions, filterAsyncRoutes, filterFlattenRoutes } from 'pherusa-pro'
 import { globalActions } from '@stores/global'
 
 export const getAuthRoutes = () => {
